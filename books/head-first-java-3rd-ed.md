@@ -20,9 +20,9 @@ The blueprint doesn't stop at just the structure. The class also specifies the a
 
 The class blueprint approach offers several advantages:
 
-* **Reusability:** Just as a single blueprint can be used to build numerous 911s, a class can be used to create many objects of the same type (Bullet Point 3). This allows Porsche to efficiently manufacture cars and promotes code reuse in Java programs.
+* **Reusability:** Just as a single blueprint can be used to build numerous 911s, a class can be used to create many objects of the same type. This allows Porsche to efficiently manufacture cars and promotes code reuse in Java programs.
 * **Maintainability:** Changes made to the class blueprint, say to update engine specifications, are reflected in all 911 objects created from it. This simplifies maintenance and ensures consistency across all Porsche models.
-* **Encapsulation:** The blueprint keeps the internal details of the car (engine, transmission) hidden, promoting data protection and controlled access through methods (referencing Bullet Point 4 from previous discussions). This allows mechanics to interact with the car through specific functions without needing to know the intricate details of its inner workings.
+* **Encapsulation:** The blueprint keeps the internal details of the car (engine, transmission) hidden, promoting data protection and controlled access through methods. This allows mechanics to interact with the car through specific functions without needing to know the intricate details of its inner workings.
 
 By understanding the concept of classes as blueprints, you gain a solid foundation for building object-oriented programs in Java. Now, imagine using this `Porsche911` class to create objects representing your dream garage, each with its own unique color, model year, and horsepower!
  
