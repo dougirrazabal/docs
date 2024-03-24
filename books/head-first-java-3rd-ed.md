@@ -4,7 +4,7 @@ Why I'm reading the book?
 - I need to learn the technical language in English.
 - I'll have a Java interview.
 
-## The Porsche Blueprint - Building Blocks for Performance
+## Classes as Blueprints
 
 Imagine a world where every Porsche 911 originates from a single, detailed blueprint. This blueprint, analogous to a class in Java, defines the essence of a 911. It specifies the core components (instance variables) that make a 911 a 911.
 
@@ -26,7 +26,7 @@ The class blueprint approach offers several advantages:
 
 By understanding the concept of classes as blueprints, you gain a solid foundation for building object-oriented programs in Java. Now, imagine using this `Porsche911` class to create objects representing your dream garage, each with its own unique color, model year, and horsepower!
  
-## Bringing Your Dream Porsche to Life - Objects as Instances
+## Objects as Instances
 
 Imagine stepping into your dream garage and seeing not just any car, but a virtual representation of your perfect Porsche 911. This virtual car, brought to life in Java, is an object – a unique entity created from the `Porsche911` class blueprint.
 
