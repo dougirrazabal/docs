@@ -1,5 +1,7 @@
 # Head First Java 3rd Edition
+
 Why I'm reading the book?
+
 - I need to learn Java.
 - I need to learn the technical language in English.
 - I'll have a Java interview.
@@ -8,7 +10,7 @@ Why I'm reading the book?
 
 Imagine a world where every Porsche 911 originates from a single, detailed blueprint. This blueprint, analogous to a class in Java, defines the essence of a 911. It specifies the core components (instance variables) that make a 911 a 911.
 
-### The Blueprint in Action:
+### The Blueprint in Action
 
 Just like a blueprint outlines the placement of walls, doors, and windows in a house, the Porsche class defines the internal properties of a 911 object. These instance variables act as the building blocks for each car's unique data. For example, the `Porsche911` class might have instance variables for `color`, `modelYear`, and `horsepower`.
 
@@ -16,29 +18,31 @@ Just like a blueprint outlines the placement of walls, doors, and windows in a h
 
 The blueprint doesn't stop at just the structure. The class also specifies the actions (methods) a 911 object can perform. These methods represent the functionalities or behaviors available to the car. Think of them as the instructions that tell the car how to function. The `Porsche911` class, for instance, might have methods like `accelerate()`, `brake()`, and `shiftGears()`.
 
-### Benefits of the Blueprint Approach:
+### Benefits of the Blueprint Approach
 
 The class blueprint approach offers several advantages:
 
-* **Reusability:** Just as a single blueprint can be used to build numerous 911s, a class can be used to create many objects of the same type. This allows Porsche to efficiently manufacture cars and promotes code reuse in Java programs.
-* **Maintainability:** Changes made to the class blueprint, say to update engine specifications, are reflected in all 911 objects created from it. This simplifies maintenance and ensures consistency across all Porsche models.
-* **Encapsulation:** The blueprint keeps the internal details of the car (engine, transmission) hidden, promoting data protection and controlled access through methods. This allows mechanics to interact with the car through specific functions without needing to know the intricate details of its inner workings.
+- **Reusability:** Just as a single blueprint can be used to build numerous 911s, a class can be used to create many objects of the same type. This allows Porsche to efficiently manufacture cars and promotes code reuse in Java programs.
+
+- **Maintainability:** Changes made to the class blueprint, say to update engine specifications, are reflected in all 911 objects created from it. This simplifies maintenance and ensures consistency across all Porsche models.
+
+- **Encapsulation:** The blueprint keeps the internal details of the car (engine, transmission) hidden, promoting data protection and controlled access through methods. This allows mechanics to interact with the car through specific functions without needing to know the intricate details of its inner workings.
 
 By understanding the concept of classes as blueprints, you gain a solid foundation for building object-oriented programs in Java. Now, imagine using this `Porsche911` class to create objects representing your dream garage, each with its own unique color, model year, and horsepower!
- 
+
 ## Objects as Instances
 
 Imagine stepping into your dream garage and seeing not just any car, but a virtual representation of your perfect Porsche 911. This virtual car, brought to life in Java, is an object – a unique entity created from the `Porsche911` class blueprint.
 
-### Uniqueness from a Shared Template:
+### Uniqueness from a Shared Template
 
 While all objects created from the `Porsche911` class share the same blueprint, each object has its own distinct identity. This individuality stems from the concept of instance variables. These variables, defined within the class blueprint, store the specific data or state of each object.
 
 For example, the `Porsche911` class blueprint might define instance variables for `color`, `modelYear`, and `horsepower`. An object instantiated from this class, representing your dream Porsche, would have its own unique values assigned to these variables. Your dream car object might be a "Guards Red" 2024 model boasting 473 horsepower, while a friend's object might be a classic "Midnight Blue" 1986 model with a different horsepower rating.
 
-### The Power of Individuality:
+### The Power of Individuality
 
-This ability of objects to hold distinct values allows for rich and diverse programs. You can create multiple objects of the `Porsche911` class type, each representing a different Porsche model with its own characteristics. Imagine using this class to create objects for various Porsches throughout history, showcasing the evolution of this iconic car. 
+This ability of objects to hold distinct values allows for rich and diverse programs. You can create multiple objects of the `Porsche911` class type, each representing a different Porsche model with its own characteristics. Imagine using this class to create objects for various Porsches throughout history, showcasing the evolution of this iconic car.
 
 ### Beyond Individuality: Object Interaction
 
