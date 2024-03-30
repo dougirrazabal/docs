@@ -38,9 +38,9 @@ No matter how big your program is (in other words, no matter how many *classes* 
 
 ```java
 class HelloWorld {
- public static void main(String[] args) {
- System.out.println("Hello, World!"); 
- }
+  public static void main(String[] args) {
+    System.out.println("Hello, World!"); 
+  }
 }
 ```
 
@@ -124,3 +124,80 @@ Depending on your programming background and personal preferences, *you* might u
 A caller **passes** arguments. A method **takes** parameters.
 
 Arguments are the things you pass into the methods. An **argument** (a value like 2, Foo, or a reference to a Dog) lands face-down into a...wait for it...**parameter**. And a parameter is nothing more than a local variable. A variable with a type and a name that can be used inside the body of the method.
+
+### Pass-by-Value in Action
+
+Java follows a pass-by-value approach when arguments are passed to methods. This means a copy of the data is passed, not the original data itself.
+
+#### Example 1: Primitive Data Types (int)
+
+```java
+public class PassByValueDemo {
+  public static void main(String[] args) {
+    int x = 5; // Original value
+
+    System.out.println("Before changeValue: x = " + x);
+    changeValue(x); // Pass a copy of x
+    System.out.println("After changeValue: x = " + x);
+  }
+
+  public static void changeValue(int y) {
+    y = 10; // Modify the copy (doesn't affect original x)
+  }
+}
+```
+
+1. `x` is assigned the value 5.
+2. `changeValue` is called, passing a copy of `x` (the value 5).
+3. Inside `changeValue`, `y` (the copy) is modified to 10.
+4. However, this change only affects the copy within the method, not the original `x` in `main`.
+5. Printing `x` before and after the call shows its value remains 5.
+
+##### Key Point: Pass-by-value for primitives ensures the original data in the calling method remains untouched
+
+#### Example 2: Objects (Pass-by-Reference of Object References)
+
+```java
+public class PassByValueDemo {
+  public static void main(String[] args) {
+    Person person = new Person("Alice", 25); // Create a Person object
+
+    System.out.println("Before changeName: " + person.getName() + ", " + person.getAge());
+    changeName(person); // Pass the reference (copy) of person
+    System.out.println("After changeName: " + person.getName() + ", " + person.getAge());
+  }
+
+  public static void changeName(Person p) {
+    p.setName("Bob"); // Modify the object's name (affects original person)
+  }
+}
+
+class Person {
+  private String name;
+  private int age;
+
+  public Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  // getters and setters for age (not shown for brevity)
+}
+```
+
+1. A `Person` object `person` is created.
+2. `changeName` is called, passing a copy of the reference to `person` (imagine the reference as a pointer to the object's location in memory).
+3. Inside `changeName`, modifications to `p` (which refers to the same object as `person`) affect the original object's attributes (`name` in this case).
+4. Printing before and after calling `changeName` shows the object's `name` is indeed changed to "Bob".
+
+##### Key Point: While Java uses pass-by-value, for objects, the reference copy allows modifications within the method to affect the original object
+
+### Encapsulation
