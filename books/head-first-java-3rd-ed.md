@@ -339,4 +339,5 @@ Method overloading is nothing more than having two methods with the same name bu
 3. **You can vary the access levels in any direction:** You’re free to overload a method with a method that’s more restrictive. It doesn’t matter, since the new method isn’t obligated to fulfill the contract of the overloaded method.
 
 ## 8. Interfaces and Abstract Classes: Serious Polymorphism
+
 **Inheritance is just the beginning.** To exploit polymorphism, we need interfaces (and not the GUI kind). We need to go beyond simple inheritance to a level of flexibility and extensibility you can get only by designing and coding to interface specifications. Some of the coolest parts of Java wouldn’t even be possible without interfaces, so even if you don’t design with them yourself, you still have to use them. But you’ll want to design with them. You’ll need to design with them. **You’ll wonder how you ever lived without them.** What’s an interface? It’s a 100% abstract class. What’s an abstract class? It’s a class that can’t be instantiated. What’s that good for? You’ll see in just a few moments.
