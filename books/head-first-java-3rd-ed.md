@@ -313,7 +313,7 @@ This point builds on the previous ones. If `B extends A` and `C extends B`, then
 
 ### Keeping The Contract: Rules for Overriding
 
-1. **Inheritance:**  The subclass (child class) must inherit the method from the superclass (parent class) in order to override it. Methods that are not inherited cannot be overridden.
+1. **Inheritance:** The subclass (child class) must inherit the method from the superclass (parent class) in order to override it. Methods that are not inherited cannot be overridden.
 
 2. **Method Signature:** The overriding method must have the same name and parameter list (number, order, and type of parameters) as the method it overrides in the superclass. This ensures that calls to the method are routed correctly based on the object's type at runtime (polymorphism).
 
@@ -344,7 +344,7 @@ What’s an interface? It’s a 100% abstract class. What’s an abstract class?
 
 ### Interfaces: The Universal Language of Cars
 
-Imagine an interface as a universal language spoken by all cars. It defines what a car **can do** (accelerate, brake, etc.), but **not how** it does it. This allows different car classes (Porsche911, TeslaModelS, etc.) to fulfill the contract in their own unique way, providing flexibility in how they implement these actions.  Think of it as a set of driving instructions that any car, regardless of its origin or fancy features, can understand and follow.
+Imagine an interface as a universal language spoken by all cars. It defines what a car **can do** (accelerate, brake, etc.), but **not how** it does it. This allows different car classes (Porsche911, TeslaModelS, etc.) to fulfill the **contract** in their own unique way, providing flexibility in how they implement these actions. Think of it as a set of driving instructions that any car, regardless of its origin or fancy features, can understand and follow.
 
 ```java
 // Interface: Car. What any car can do
@@ -371,7 +371,7 @@ public abstract class CarTemplate {
 
 ### Concrete Classes: Bringing Cars to Life
 
-Concrete classes are the real deal! They inherit from abstract classes or interfaces and provide specific implementations. This is where we create our Porsche911 with its unique roar and lightning-fast acceleration!  The concrete class brings the abstract concept of a car to life,  adding the details and functionalities that make a Porsche a Porsche.
+Concrete classes are the real deal! They inherit from abstract classes or interfaces and provide specific implementations. This is where we create our Porsche911 with its unique roar and lightning-fast acceleration! The concrete class brings the abstract concept of a car to life, adding the details and functionalities that make a Porsche a Porsche.
 
 ```java
 // Concrete Class: Porsche911 extends CarTemplate and implements Car
@@ -402,10 +402,10 @@ public class Porsche911 extends CarTemplate implements Car {
 
 Selecting the right class type depends on your car's individuality:
 
-- **Regular Class:** Use it when your class is one-of-a-kind,  unlike any existing category (and doesn't need inheritance). Think of it as a custom-built, futuristic vehicle unlike anything on the road today.
-- **Subclass:** When you have a new car type (like a Boxster) that inherits general car behavior (defined in the abstract class) but adds specific features (like a convertible top). It's like inheriting the knowledge of how to drive from a general car class but adding your own driving style and customization options.
+- **Regular Class:** Use it when your class is one-of-a-kind, unlike any existing category (and doesn't need inheritance). Think of it as a custom-built, futuristic vehicle unlike anything on the road today.
+- **Subclass:** When you have a new car type (like a Taycan) that inherits general car behavior (defined in the abstract class) but adds specific features (like a convertible top). It's like inheriting the knowledge of how to drive from a general car class but adding your own driving style and customization options.
 - **Abstract Class:** When you want a template for multiple car types with some shared functionality (like starting the engine). Imagine it as a blueprint for a car factory, specifying the core steps to build a car but allowing flexibility in the specifics based on the model.
-- **Interface:** When you want to define a general car ability (like accelerating) that different car types can fulfill independently. It's like a contract that says "all cars must be able to accelerate," but lets them figure out how to reach high speeds in their own way,  whether it's a powerful engine or a supercharged electric motor.
+- **Interface:** When you want to define a general car ability (like accelerating) that different car types can fulfill independently. It's like a contract that says "all cars must be able to accelerate," but lets them figure out how to reach high speeds in their own way, whether it's a powerful engine or a supercharged electric motor.
 
 ### The Beauty of Polymorphism: A Well-Oiled Machine
 
