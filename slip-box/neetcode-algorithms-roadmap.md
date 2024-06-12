@@ -15,6 +15,10 @@ Master the core algorithms until you understand the reasoning behind each line o
 - BFS (Breadth-First Search)
 - Sliding Window
 
+## Notes
+
+
+
 ## Resources
 
-- How I Would Learn LeetCode If I Could Start Over [video](https://www.youtube.com/watch?v=aHZW7TuY_yo)
+- How I Would Learn LeetCode If I Could Start Over [(video)](https://www.youtube.com/watch?v=aHZW7TuY_yo)
