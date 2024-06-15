@@ -26,7 +26,7 @@ def search(nums, target):
     right = len(nums) - 1
 
     while left <= right:
-        mid = (left + right) // 2
+        mid = (left + right) // 2 # Double slash rounds down
 
         if nums[mid] == target:
             return mid
