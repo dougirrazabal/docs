@@ -16,30 +16,28 @@ Master the core algorithms until you understand the reasoning behind each line o
 - Sliding Window
 
 ## JavaScript => Python
+
 I’ve been solving LeetCode problems using JavaScript, and I’ve reached a point where I need built-in data structures for medium difficulty problems. Implementing these data structures will make the JavaScript code more complex.
+
+## Notes
 
 ### My Style of Binary Search
 
 ```python
-def search(nums, target):
-    left = 0
-    right = len(nums) - 1
+def binarySearch(arr, target):
+    L, R = 0, len(arr) - 1
 
-    while left <= right:
-        mid = (left + right) // 2 # Double slash rounds down
+    while L <= R:
+        mid = (L + R) // 2
 
-        if nums[mid] == target:
-            return mid
-
-        if nums[mid] < target:
-            left = mid + 1
+        if target > arr[mid]:
+            L = mid + 1
+        elif target < arr[mid]:
+            R = mid - 1
         else:
-            right = mid - 1
-
+            return mid
     return -1
 ```
-
-
 
 ## Resources
 
