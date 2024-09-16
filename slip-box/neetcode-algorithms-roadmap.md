@@ -1,12 +1,8 @@
 # NeetCode Algorithms Roadmap
 
-Status: ⚠️ WIP
-
-## Research
-
 LeetCode is challenging and should be approached as a difficult subject.
 
-### Start with the basics
+## Start with the basics
 
 Master the core algorithms until you understand the reasoning behind each line of code:
 
@@ -15,13 +11,7 @@ Master the core algorithms until you understand the reasoning behind each line o
 - BFS (Breadth-First Search)
 - Sliding Window
 
-## JavaScript => Python
-
-I’ve been solving LeetCode problems using JavaScript, and I’ve reached a point where I need built-in data structures for medium difficulty problems. Implementing these data structures will make the JavaScript code more complex.
-
-## Notes
-
-### My Style of Binary Search
+## My Style of Binary Search
 
 ```python
 def binarySearch(arr, target):
