@@ -15,17 +15,17 @@ Master the core algorithms until you understand the reasoning behind each line o
 
 ```python
 def binarySearch(arr, target):
-    L, R = 0, len(arr) - 1
+    left, right = 0, len(arr) - 1
 
-    while L <= R:
-        mid = (L + R) // 2
+    while left <= right:
+        mid = (left + right) // 2
 
+        if arr[mid] == target:
+            return mid        
         if target > arr[mid]:
-            L = mid + 1
-        elif target < arr[mid]:
-            R = mid - 1
+            left = mid + 1
         else:
-            return mid
+            right = mid - 1
     return -1
 ```
 
