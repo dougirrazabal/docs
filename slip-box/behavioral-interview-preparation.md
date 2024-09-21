@@ -13,3 +13,9 @@ Typically, behavioral interview questions can be split into several types:
 3. Prepare experiences to showcase fit to the company's culture / core values
 4. Try out mock behavioral interviews
 
+## Crafting the perfect self introduction
+
+"Tell me about yourself" or "give me a quick introduction of your profile" is almost always the first question encountered in your software engineer interviews.
+
+### Make an elevator pitch
+
